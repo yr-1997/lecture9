@@ -15,14 +15,11 @@ const generateBlocks = () => {
         square.append(littleSquare);
     }
 };
-
 generateBlocks();
-
 const generateBlocksInterval = () => {
     document.querySelectorAll('.littleSquare').forEach(el => {
         el.style.backgroundColor = '#' + (Math.random().toString(16) + '000000').substring(2, 8);
     });
 };
-
 const delay = 1000;
 setInterval(() => generateBlocksInterval(), delay);
